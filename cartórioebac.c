@@ -130,6 +130,7 @@ int main()
 		printf ("\t1 - Incluir nomes \n");
 		printf ("\t2 - Consultar nomes \n");
 		printf ("\t3 - Deletar nomes\n\n");
+		printf ("\t4 - Sair do sistema.\n\n");
 		printf ("Digite a opção desejada:"); //fim do menu
 	
 		scanf("%d", &opcao); //armazenando a escolha do usuário
@@ -150,12 +151,19 @@ int main()
 			deletar();
 			break;
 			
+			case 4:
+			printf ("Obrigado por utilizar o sistema!\n");
+			return 0;
+			break;
+			
 			default:
 			printf("Você digitou uma opção inválida!\n");
 			system("pause");
 			break;
 			
 		}
+		
+		
 	
 	}
 	
